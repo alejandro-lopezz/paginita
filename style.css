@@ -1,0 +1,325 @@
+:root{
+    --primary: #fff;
+    --bg-color: rgb(5, 53, 61);
+    --bg-envelope-color: #f5edd1;
+    --envelope-tab: #ecdeb8;
+    --envelope-cover: #e6cfa7;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --txt-color: #444;
+    --heart-color: rgb(252, 8, 231);
+  }
+
+body {
+    background-color: #F2EAD3;
+}
+
+/*seccion entrar*/
+
+.section-entrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titulo {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 36x;
+}
+
+.entrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-pochaco {
+    width: 300px;
+}
+
+.btn-entrar {
+    width: 124px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: #3F2305;
+    background-color: #DFD7BF;
+}
+
+/*seccion recuerdos*/
+#seccion-recuerdos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*carta*/
+.parrafo-carta {
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    right: 48px;
+    font-size: 36px;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .container > .envelope-wrapper {
+    background: var(--bg-envelope-color);
+    box-shadow: 0 0 40px var(--shadow-color);
+  }
+  .envelope-wrapper > .envelope {
+    position: relative;
+    width: 300px;
+    height: 230px;
+  }
+  .envelope-wrapper > .envelope::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    border-top: 130px solid var(--envelope-tab);
+    border-right: 150px solid transparent;
+    border-left: 150px solid transparent;
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 0.7s;
+  }
+  .envelope-wrapper > .envelope::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 0px;
+    height: 0px;
+    border-top: 130px solid transparent;
+    border-right: 150px solid var(--envelope-cover);
+    border-bottom: 100px solid var(--envelope-cover);
+    border-left: 150px solid var(--envelope-cover);
+  }
+  .envelope > .letter {
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    width: 54%;
+    height: 80%;
+    background: var(--primary);
+    text-align: center;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 5px var(--shadow-color);
+    padding: 20px 10px;
+  }
+  
+  .envelope > .letter > .text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--txt-color);
+    text-align: left;
+    font-size: 10px;
+  }
+  .heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--heart-color);
+    z-index: 4;
+    transform: translate(-50%, -20%) rotate(45deg);
+    transition: transform 0.5s ease-in-out 1s;
+    box-shadow: 0 1px 6px var(--shadow-color);
+    cursor: pointer;
+  }
+  .heart:before, 
+  .heart:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--heart-color);
+    border-radius: 50%;
+  }
+  .heart:before {
+    top: -7.5px;
+  }
+  .heart:after {
+    right: 7.5px;
+  }
+  .flap > .envelope:before {
+    transform: rotateX(180deg);
+    z-index: 0;
+  }
+  .flap > .envelope > .letter {
+    bottom: 100px;
+    transform: scale(1.5);
+    transition-delay: 1s;
+  }
+  .flap > .heart {
+    transform: rotate(90deg);
+    transition-delay: 0.4s;
+  }
+
+  /*boton continuar*/
+  .btn-continuar {
+    position: absolute;
+    right: 36%;
+    top: 90%;
+    width: 100px;
+    font-size: 14px;
+  }
+
+  /*seccion fotos*/
+  #seccion-fotos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*img lado derecho*/
+  .recuerdo-1, .recuerdo-2 {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-top: 26px;
+  }
+
+  .parrafo-fotos, .parrafo-derecho {
+    font-size: 18px;
+  }
+
+  .img-ella {
+    width: 92px;
+  }
+
+  .img-recuerdos, .img-izquierda {
+    width: 200px;
+  }
+
+  /*eso es extra*/
+  .parrafo-2 {
+    font-size: 18px;
+    position: absolute;
+    top: 28%;
+    right: 26%;
+  }
+
+  .parrafo-3 {
+    font-size: 18px;
+    position: absolute;
+    top: 31%;
+    right: 30%;
+  }
+
+  .video {
+    width: 122px;
+  }
+
+  /*grid*/
+  .container-cheems {
+    width: 360px;
+    /* border: 2px solid black; */
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.caja {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #3F2305;
+}
+
+.imagen-practica {
+    width: 100px;
+}
+
+.parrfao-grid {
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+.imagen-p {
+  width: 170px;
+}
+
+.continuar1 {
+  width: 150px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #DFD7BF;
+}
+
+.btn-continuar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.continuar {
+  width: 150px;
+  height: 30px;
+  margin-top: 50px;
+  border: 1px solid #3F2305;
+  border-radius: 10px;
+  background-color: #DFD7BF;
+}
+
+/* juego */
+#juego {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.section-preguntas {
+  border: 2px solid #3F2305;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  padding: 7px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  margin-bottom: 3px;
+}
+
+label:hover {
+  background: #cec0fc;
+}
+
+.btn-enviar {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  background-color: #76d7c8;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#resultado {
+  font-size: 30px;
+  color: darkred;
+}

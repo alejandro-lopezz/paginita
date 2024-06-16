@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dos Años Amorcito</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section id="seccion-entrar" class="section-entrar">
+        <div class="titulo">
+            <h1>Hola Amorcito, recuerdas que en la primera pagina te dije que esperaba poder continuarla?
+            <br><br>Bueno yo feli de estar aqui ♥ </h1>
+        </div>
+    
+        <div class="entrar">
+            <img src="./img/pochaco.png" alt="Imagen-pochaco" class="img-pochaco">
+            <button onclick="mostrarRecuerdos()" class="btn-entrar">Pulsa para entrar 💗</button>
+            <p class="parrafo-btn">(Esta vez no necesita contraseña)</p>
+        </div>
+    </section>
+    
+    <section id="seccion-recuerdos">
+        <p class="parrafo-carta">Pulsa en el corazón</p>
+
+        <div class="container">
+            <div class="envelope-wrapper">
+                <div class="envelope">
+                    <div class="letter">
+                        <div class="text">
+                            <strong>Te amo amorcito</strong>
+                            <p>
+                                Tengo que decirte que todo este tiempo contigo a sido de los mas bonito
+                                ¿Estas lista para recordar casi todo lo de este nuevo añooo? 💗 <br>
+                                Solo dale a continuar mividaaaa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="heart"></div>
+            </div>
+        </div>
+
+        <div class="btn-continuar2">
+            <button class="continuar1" onclick="mostrarFotos()">Continuar</button>
+        </div>
+    </section>
+
+    <section id="seccion-fotos">
+        <div class="recuerdo-1">
+            <p class="parrafo-fotos">Primero quiero que veas a la novia mas linda de todaaaas:3</p>
+            <img src="./img/ella.jpg" alt="recuerdo1" class="img-ella">
+        </div>
+        
+        <p class="parrafo-2">¿Ya viste lo bonita que es?</p>
+        <p class="parrafo-3">Siempre sera asi 💗</p>
+
+        <div class="recuerdo-2">
+            <video controls class="video">
+                <source src="./img/video1.mp4" type="video/mp4">
+                <source src="./img/video1.mp4" type="video/ogg">
+            </video>
+            <p class="parrafo-derecho">Y tiene a alguien que siempre la amara tal y como es</p>
+        </div>
+
+        <div class="recuerdo-1">
+            <p class="parrafo-fotos">Mira que bonitos, ese dia fuimos a las lanchas de chapultepec</p>
+            <video controls class="video">
+                <source src="./img/video2.mp4" type="video/mp4">
+                <source src="./img/video2.mp4" type="video/ogg">
+            </video>
+        </div>
+       <!--  fotos grid -->
+
+       <section class="container-cheems">
+            <div class="caja" >
+                <img src="./img/kanye.jpg" class="imagen-practica">
+                <p class="parrafo-grid">Con diosito</p> 
+            </div>
+            <div class="caja">
+                <img src="./img/gato.jpg" class="imagen-practica">
+                <p class="parrafo-grid">Popopurin y gato:3</p>
+            </div>
+            <div class="caja">
+                <img src="./img/vaquita.jpg" class="imagen-practica">
+                <p class="parrafo-grid">Tú con una vaquitaaa. <br> Sin duda mi favorita</p>
+            </div>
+            <div class="caja">
+                <img src="./img/felices.jpg" class="imagen-practica">
+                <p class="parrafo-grid">Solo feliiiceeees</p>
+            </div>
+            <div class="caja">
+                <video controls class="video">
+                    <source src="./img/video3.mp4" type="video/mp4">
+                    <source src="./img/video3.mp4" type="video/ogg">
+                </video>
+                <p class="parrafo-grid">En tu cumpleeee <br> Hablando vulgaridades ajsaj</p>
+            </div>
+            <div class="caja">
+                <img src="./img/soloella.jpg" class="imagen-practica">
+                <p class="parrafo-grid">Ahhh que lindota <br> Siempre te me antojas, ojala darte tan druto siempre </p>
+            </div>
+            <div class="caja">
+                <img src="./img/sudadera.jpg" class="imagen-practica">
+                <p class="parrafo-grid">Con mi sudaderaa 💗</p>
+            </div>
+            <div class="caja">
+                <video controls class="video">
+                    <source src="./img/video4.mp4" type="video/mp4">
+                    <source src="./img/video4.mp4   " type="video/ogg">
+                </video>
+                <p class="parrafo-grid">Depues de la acomodada</p>
+            </div>
+            <div class="caja">
+                <img src="./img/paralelismo.jpg" class="imagen-p">
+                <p class="parrafo-grid">Paralelismos fotograficos JAJAJAJ</p>
+            </div>
+        </section>
+
+        <div class="btn-continuar2">
+            <button class="continuar" onclick="mostrarJuego()">Continuar</button>
+        </div>
+    </section>
+
+    <div id="juego">
+        <header>
+            <h2>Y por ultimo juguemos a las preguntas 😈</h2>
+        </header>
+        <section id="p0" class="section-preguntas">
+            <h3>1 - ¿En que mes te acomode la matriz por primera vez? JJAJAJA</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Agosto
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Enero
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Marzo
+            </label>
+        </section>
+        <section id="p1" class="section-preguntas">
+            <h3>2 - ¿Del 1 al 100 cuanto piensas que te amo?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> 100
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> 1
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> 10000000
+            </label>
+        </section>
+        <section id="p2" class="section-preguntas">
+            <h3>3 - ¿Cuando fue nuestro primer besito?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Mayo
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Junio
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Agosto
+            </label>
+        </section>
+        <section id="p3" class="section-preguntas">
+            <h3>4 - ¿Cuanto tiempo llevamos juntos contando dias 😡😡?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> 2 años, 6 dias, 12 horas.
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> 2 años, 7 dias, 8 horas.
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> 2 años, 8 dias, 16 horas.
+            </label>
+        </section>
+        <section id="p4" class="section-preguntas">
+            <h3>5 - ¿Me perdonas por ser tan distraido? 🥹</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Chiii
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Perdoname tu a mi mividaaa
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Chi, ven y acomodame la matriz
+            </label>
+        </section>
+
+        <button class="btn-enviar" onclick="enviar()">Enviar</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+
+    </div>
+
+    <script src="./scrpt.js"></script>
+</body>
+</html>
